@@ -23,6 +23,9 @@ def main():
         if board is None:
             print("Error")
             continue
+        
+        print("------------------------------------------------------")
+        print(filename)
 
         checkmate(board)
         
