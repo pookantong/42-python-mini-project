@@ -14,7 +14,7 @@ class Chess:
             while 0 <= x < n and 0 <= y < n:
                 if (x, y) == end:
                     return True
-                if board[x][y] != PIECES.keys():
+                if board[x][y] in PIECES.keys():
                     break
                 if not self.is_full_board:
                     break
