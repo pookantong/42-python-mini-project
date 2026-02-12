@@ -17,7 +17,7 @@ class Chess:
                 path.append((x, y))
                 if (x, y) == end:
                     return True, path
-                if board[x][y] != '.':
+                if board[x][y] in PIECES.keys():
                     break
                 if not self.is_full_board:
                     break
